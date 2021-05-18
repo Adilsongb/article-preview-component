@@ -1,0 +1,51 @@
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+
+    background-color:  #ecf2f8;
+
+}
+
+#container {
+
+    background-color: #ffffff;
+    width: 700px;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+#imgContainer {
+
+    background-color: #bdbdbd;
+    background-image: url(images/drawers.jpg);
+    background-size: 300px;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+
+}
+
+#txtContainer {
+
+    width: 60%;
+    box-sizing: border-box;
+    padding: 30px;
+
+}
+
+
+#txtContainer h1 {
+
+    margin: 0;
+    font-size: 20px;
+    color: #5b687c;
+
+}
+
+#txtContainer p {
+
+    color: #9eafc2;
+
+}

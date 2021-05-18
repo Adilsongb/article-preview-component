@@ -1,10 +1,23 @@
 
+html {
+
+    height: 100%;
+    min-height: 100%;
+
+}
+
 body {
 
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
-
     background-color:  #ecf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9eafc2;
 
 }
 
@@ -21,7 +34,7 @@ body {
 
     background-color: #bdbdbd;
     background-image: url(images/drawers.jpg);
-    background-size: 300px;
+    background-size: 340px;
     width: 40%;
     border-radius: 10px 0 0 10px;
 
@@ -46,6 +59,51 @@ body {
 
 #txtContainer p {
 
-    color: #9eafc2;
+    margin: 15px 0;
+
+}
+
+#autorContainer {
+
+    display: flex;
+    align-items: center;
+
+}
+
+#autorContainer img {
+
+    width: 40px;
+    border-radius: 50%;
+    
+}
+
+#autorContainer span {
+
+    display: inline-block;
+    margin-left: 15px;
+    width: 80%;
+    
+}
+
+#autorContainer .nameAutor {
+
+    font-weight: 700;
+    color: #5b687c;
+    margin-bottom: 2px;
+
+}
+
+.botaoShare {
+
+    background-color: #ecf2f8;
+    background-image: url(images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 
 }

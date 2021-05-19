@@ -24,9 +24,10 @@ body {
 #container {
 
     background-color: #ffffff;
-    width: 700px;
+    width: 750px;
     display: flex;
     border-radius: 10px;
+    box-shadow: 5px 25px 20px #e2e2e2;
 
 }
 
@@ -34,7 +35,7 @@ body {
 
     background-color: #bdbdbd;
     background-image: url(images/drawers.jpg);
-    background-size: 340px;
+    background-size: 370px;
     width: 40%;
     border-radius: 10px 0 0 10px;
 
@@ -44,7 +45,7 @@ body {
 
     width: 60%;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 40px;
 
 }
 
@@ -53,13 +54,15 @@ body {
 
     margin: 0;
     font-size: 20px;
-    color: #5b687c;
+    color: #48556a;
 
 }
 
 #txtContainer p {
 
     margin: 15px 0;
+    color: #6d7f97;
+    line-height: 1.5;
 
 }
 
@@ -67,17 +70,18 @@ body {
 
     display: flex;
     align-items: center;
+    margin-top: 5px;
 
 }
 
-#autorContainer img {
+#autorContainer .avatar {
 
     width: 40px;
     border-radius: 50%;
     
 }
 
-#autorContainer span {
+#autorContainer .detailAutor {
 
     display: inline-block;
     margin-left: 15px;
@@ -96,14 +100,104 @@ body {
 .botaoShare {
 
     background-color: #ecf2f8;
-    background-image: url(images/icon-share.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.botaoShare:hover {
+
+    background-color: #5b687c;
+    
+}
+
+.ativoBotao {
+
+    background-color: #5b687c;
+
+}
+
+.botaoShare:hover .icon {
+
+    fill: #ffffff;
+    
+}
+
+.ativoIcon {
+
+    fill: #ffffff;
+
+}
+
+.popupShare {
+
+    background-color: #5b687c;
+    width: 220px;
+    position: absolute;
+    top: -75px;
+    right: -110px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 10px;
+    color: #9eafc2;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    box-shadow: 5px 10px 20px #e2e2e2;
+
+}
+
+.popupShare a {
+
+    margin-left: 18px;
+
+}
+
+.popupShare::after {
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #5b687c transparent transparent transparent;
+
+}
+
+.botaoShare .show {
+
+    visibility: visible;
+    -webkit-animation: fadeIn 0.2s;
+    animation: fadeIn 0.2s;
+
+}
+
+
+@-webkit-keyframes fadeIn {
+
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+}
+
+@keyframes fadeIn {
+
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+}
+
+a:hover  .iconHover{
+
+    fill: #cccccc;
 
 }

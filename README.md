@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Adilsongb/article-preview-component)
-- Live Site URL: [Add live site URL here](https://article-preview-component-jet-phi.vercel.app/)
+- Solution URL: [GitHub](https://github.com/Adilsongb/article-preview-component)
+- Live Site URL: [Vercel](https://article-preview-component-jet-phi.vercel.app/)
 
 ## My process
 
